@@ -1,215 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SW413JN1H3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SW413JN1H3');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Artistic Haven - Arts & Crafts Store</title>
-    <!-- Tailwind CSS CDN -->
+    <title>The Artistic Haven - Unleash Your Creativity</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            /* Artistic background image */
-            background-image: url('https://placehold.co/1920x1080/F5F5DC/6C7A89?text=Textured+Canvas+Art'); /* A subtle artistic canvas texture */
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        .art-bg {
+            background-image: url('https://placehold.co/1920x1080/EFE3D5/4A4A4A?text=Watercolor+Paper+Texture');
             background-size: cover;
+            background-position: center;
             background-attachment: fixed;
-            background-position: center center;
-            min-height: 100vh;
         }
-        .art-hero {
-            position: relative;
-            overflow: hidden;
-        }
-        .art-splash {
-            position: absolute;
-            opacity: 0.1;
-            filter: blur(5px);
-            pointer-events: none;
-            user-select: none;
-        }
-        .splash-top-left { top: -20px; left: -20px; width: 150px; height: 150px; background-color: #f7a5d1; border-radius: 50%; }
-        .splash-bottom-right { bottom: -30px; right: -30px; width: 200px; height: 200px; background-color: #a5dcf7; border-radius: 50%; }
-        .splash-middle { top: 30%; left: 10%; width: 100px; height: 100px; background-color: #ffeb99; border-radius: 50%; }
-        .splash-right { top: 50%; right: 5%; width: 120px; height: 120px; background-color: #c7e9b0; border-radius: 50%; }
-
-        /* Custom styles for artistic feel */
-        .card-artistic {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .card-artistic:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .btn-artistic {
-            background-image: linear-gradient(to right, #FC466B 0%, #3F5EFB  51%, #FC466B  100%);
-            margin: 10px;
-            padding: 12px 35px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-        }
-
-        .btn-artistic:hover {
-            background-position: right center; /* change the direction of the change here */
+        .btn-primary {
+            background-color: #6b21a8; /* Dark Purple */
             color: #fff;
-            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 15px rgba(107, 33, 168, 0.4);
+        }
+        .btn-primary:hover {
+            background-color: #581c87;
+            transform: translateY(-3px);
+        }
+        .card-product {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
-<body>
-    <!-- Header Section -->
-    <header class="bg-white bg-opacity-80 shadow-md p-4 sticky top-0 z-50 rounded-b-xl mx-2 mt-2">
-        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <a href="#" class="text-4xl font-extrabold text-indigo-700 italic tracking-wide">The Artistic Haven</a>
-            <div class="mt-4 md:mt-0 space-x-6">
-                <a href="#" class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300">Home</a>
-                <a href="#" class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300">Products</a>
-                <a href="#" class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300">About Us</a>
-                <a href="#" class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300">Contact</a>
+<body class="art-bg">
+
+    <header class="bg-white bg-opacity-90 shadow-lg p-6 sticky top-0 z-50 rounded-b-3xl mx-4 mt-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-5xl font-bold text-gray-800 italic tracking-wider">
+                The Artistic Haven
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-semibold transition duration-300">Home</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-semibold transition duration-300">Products</a>
+                <a href="#" class="text-gray-700 hover:text-purple-600 font-semibold transition duration-300">Contact</a>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section - Artistic Landing Page -->
-    <section class="art-hero relative py-20 px-4 md:px-0 text-center text-gray-800">
-        <!-- Artistic Splashes -->
-        <div class="art-splash splash-top-left"></div>
-        <div class="art-splash splash-bottom-right"></div>
-        <div class="art-splash splash-middle"></div>
-        <div class="art-splash splash-right"></div>
-
-        <div class="container mx-auto max-w-4xl relative z-10 p-8 bg-white bg-opacity-70 rounded-3xl shadow-xl border border-dashed border-purple-300">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-6 leading-tight">
-                Unleash Your Inner Artist
+    <section class="container mx-auto my-20 p-8 md:p-16 bg-white bg-opacity-95 rounded-3xl shadow-2xl text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-7xl md:text-9xl font-bold text-purple-900 mb-6 leading-tight animate-bounce">
+                Create.
+                <span class="text-pink-600">Inspire.</span>
+                <br>
+                Flourish.
             </h1>
-            <p class="text-xl md:text-2xl mb-8 font-light leading-relaxed">
-                Discover a curated collection of premium art and craft supplies to fuel your creativity. From vibrant paints to delicate threads, find everything you need to bring your imagination to life.
+            <p class="text-2xl md:text-3xl text-gray-700 mb-10 leading-relaxed font-light">
+                Your journey into art begins here. Find premium art supplies that transform ideas into masterpieces.
             </p>
-            <button class="btn-artistic inline-block px-12 py-4 rounded-full text-lg font-bold shadow-lg transform hover:scale-105 transition duration-300">
-                Explore Our Collection
+            <button id="shop-now-btn" class="btn-primary text-xl font-bold uppercase tracking-wide">
+                Shop Our Collection
             </button>
         </div>
-
-        <!-- Artistic Images for Hero Section -->
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <img src="https://placehold.co/120x120/8b5cf6/ffffff?text=Paintbrush" alt="Paint Brush" class="artistic-element absolute top-10 left-5 md:left-20 animate-pulse" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
-            <img src="https://placehold.co/100x100/ec4899/ffffff?text=Palette" alt="Color Palette" class="artistic-element absolute bottom-5 right-5 md:right-20 animate-pulse" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
-            <img src="https://placehold.co/150x100/10b981/ffffff?text=Sketchbook+Open" alt="Sketchbook" class="artistic-element absolute top-1/4 right-10 md:right-40 transform rotate-6 animate-pulse" style="width: 150px; height: 100px; object-fit: cover; border-radius: 15px;">
-            <img src="https://placehold.co/80x80/fcd34d/ffffff?text=Spool+Thread" alt="Thread Spool" class="artistic-element absolute bottom-1/4 left-10 md:left-40 transform -rotate-12 animate-pulse" style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
-            <img src="https://placehold.co/90x90/60a5fa/ffffff?text=Craft+Mirror" alt="Craft Mirror" class="artistic-element absolute top-1/2 left-1/4 transform rotate-180 animate-pulse" style="width: 90px; height: 90px; object-fit: cover; border-radius: 50%;">
-        </div>
     </section>
 
-    <!-- Featured Products Section -->
-    <section class="container mx-auto py-16 px-4 md:px-0">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Featured Products</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Product Card 1: Painting Brush Set -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg card-artistic border border-gray-200">
-                <img src="https://placehold.co/300x200/FFD1DC/333333?text=Professional+Art+Brush+Set" alt="Professional Brush Set" class="w-full h-48 object-cover rounded-xl mb-4 border border-purple-200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/FFD1DC/333333?text=Default+Brush+Set';">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Professional Brush Set</h3>
-                <p class="text-gray-600 mb-4">A complete set of high-quality synthetic brushes for all painting mediums.</p>
+    <section class="container mx-auto py-20 px-8">
+        <h2 class="text-6xl font-bold text-center text-purple-900 mb-16">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="bg-white p-8 rounded-3xl shadow-xl card-product">
+                <img src="https://placehold.co/400x300/F4E8D7/7A6B5B?text=Watercolor+Set" alt="Watercolor Set" class="w-full h-60 object-cover rounded-2xl mb-6 border-4 border-yellow-200">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-3">Artist's Watercolor Set</h3>
+                <p class="text-gray-600 mb-5">24 vibrant, professional-grade pans for stunning washes and layers.</p>
                 <div class="flex justify-between items-center">
-                    <span class="text-3xl font-bold text-purple-600">₹ 899</span>
-                    <button class="btn-artistic text-sm">Add to Cart</button>
+                    <span class="text-4xl font-bold text-purple-700">₹ 1,500</span>
+                    <button class="btn-primary px-8 py-3 text-lg add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product Card 2: Acrylic Color Set -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg card-artistic border border-gray-200">
-                <img src="https://placehold.co/300x200/A7F3D0/333333?text=Vibrant+Acrylic+Paints+Tubes" alt="Vibrant Acrylic Colors Set" class="w-full h-48 object-cover rounded-xl mb-4 border border-green-200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/A7F3D0/333333?text=Default+Acrylic+Set';">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Vibrant Acrylic Colors (12 Pack)</h3>
-                <p class="text-gray-600 mb-4">Richly pigmented acrylic paints perfect for canvas and mixed media.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl card-product">
+                <img src="https://placehold.co/400x300/C8D6E5/3C4F62?text=Premium+Sketchbook" alt="Premium Sketchbook" class="w-full h-60 object-cover rounded-2xl mb-6 border-4 border-blue-200">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-3">Premium Sketchbook (A4)</h3>
+                <p class="text-gray-600 mb-5">Thick, bleed-proof paper perfect for pencils, markers, and ink.</p>
                 <div class="flex justify-between items-center">
-                    <span class="text-3xl font-bold text-purple-600">₹ 1,250</span>
-                    <button class="btn-artistic text-sm">Add to Cart</button>
+                    <span class="text-4xl font-bold text-purple-700">₹ 650</span>
+                    <button class="btn-primary px-8 py-3 text-lg add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
 
-            <!-- Product Card 3: Premium Sketchbook -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg card-artistic border border-gray-200">
-                <img src="https://placehold.co/300x200/BFDBFE/333333?text=Premium+A4+Sketchbook+Open" alt="Premium Sketchbook A4" class="w-full h-48 object-cover rounded-xl mb-4 border border-blue-200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/BFDBFE/333333?text=Default+Sketchbook';">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">A4 Premium Sketchbook (100 GSM)</h3>
-                <p class="text-gray-600 mb-4">Smooth, durable paper suitable for pencils, charcoal, and ink drawings.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl card-product">
+                <img src="https://placehold.co/400x300/FFD1DC/E57373?text=Acrylic+Paint+Tubes" alt="Acrylic Paint Set" class="w-full h-60 object-cover rounded-2xl mb-6 border-4 border-pink-200">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-3">Vibrant Acrylic Paint Set</h3>
+                <p class="text-gray-600 mb-5">12 richly pigmented tubes for canvas, wood, and other surfaces.</p>
                 <div class="flex justify-between items-center">
-                    <span class="text-3xl font-bold text-purple-600">₹ 499</span>
-                    <button class="btn-artistic text-sm">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Product Card 4: Embroidery Thread Kit -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg card-artistic border border-gray-200">
-                <img src="https://placehold.co/300x200/FEE2E2/333333?text=Colorful+Embroidery+Thread+Kit" alt="Embroidery Thread Kit" class="w-full h-48 object-cover rounded-xl mb-4 border border-red-200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/FEE2E2/333333?text=Default+Thread+Kit';">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Colorful Embroidery Thread Kit</h3>
-                <p class="text-gray-600 mb-4">A vibrant collection of cotton threads for all your embroidery projects.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-bold text-purple-600">₹ 650</span>
-                    <button class="btn-artistic text-sm">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Product Card 5: Craft Mirror Pack -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg card-artistic border border-gray-200">
-                <img src="https://placehold.co/300x200/E0F2F7/333333?text=Assorted+Decorative+Mirrors" alt="Assorted Craft Mirrors Pack" class="w-full h-48 object-cover rounded-xl mb-4 border border-cyan-200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/E0F2F7/333333?text=Default+Mirror+Pack';">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Assorted Craft Mirrors (100 Pcs)</h3>
-                <p class="text-gray-600 mb-4">Small decorative mirrors perfect for embellishing art and craft items.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-bold text-purple-600">₹ 299</span>
-                    <button class="btn-artistic text-sm">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Product Card 6: Watercolor Palette -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg card-artistic border border-gray-200">
-                <img src="https://placehold.co/300x200/FDF3C7/333333?text=Artists+Watercolor+Pan+Set" alt="Artist's Watercolor Palette" class="w-full h-48 object-cover rounded-xl mb-4 border border-yellow-200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/FDF3C7/333333?text=Default+Watercolor+Set';">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Artist's Watercolor Palette (24 Shades)</h3>
-                <p class="text-gray-600 mb-4">High-quality opaque watercolors for rich and vibrant paintings.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-3xl font-bold text-purple-600">₹ 1,500</span>
-                    <button class="btn-artistic text-sm">Add to Cart</button>
+                    <span class="text-4xl font-bold text-purple-700">₹ 1,100</span>
+                    <button class="btn-primary px-8 py-3 text-lg add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Call to Action Section -->
-    <section class="bg-purple-100 py-16 px-4 md:px-0 text-center rounded-3xl mx-auto my-12 max-w-6xl shadow-xl">
-        <h2 class="text-4xl font-bold text-purple-800 mb-6">Start Your Masterpiece Today!</h2>
-        <p class="text-xl text-purple-700 mb-8 max-w-2xl mx-auto">
-            Browse our extensive catalog of art supplies and unleash your creativity. Quality products delivered right to your doorstep.
+    
+    <section class="container mx-auto py-20 text-center">
+        <h2 class="text-6xl font-bold text-gray-800 mb-8">Ready to create?</h2>
+        <p class="text-2xl text-gray-600 max-w-4xl mx-auto mb-12">
+            Explore our full catalog and find the perfect tools to bring your artistic visions to life.
         </p>
-        <button class="btn-artistic inline-block px-12 py-4 rounded-full text-lg font-bold shadow-lg transform hover:scale-105 transition duration-300">
-            Shop All Products
+        <button id="shop-all-btn" class="btn-primary text-2xl">
+            View All Products
         </button>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-8 mt-12 rounded-t-xl mx-2 mb-2">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-0">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-                <h4 class="text-xl font-bold mb-2">The Artistic Haven</h4>
-                <p class="text-gray-400">&copy; 2025 All rights reserved.</p>
-            </div>
-            <div class="flex space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
-            </div>
+    <footer class="bg-gray-900 text-white py-12 px-8 mt-20 rounded-t-3xl">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">&copy; 2025 The Artistic Haven. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to handle redirection
+            function redirectToThankYouPage() {
+                window.location.href = 'thankyou.html';
+            }
+
+            // Get all buttons by their IDs and class
+            const shopNowBtn = document.getElementById('shop-now-btn');
+            const shopAllBtn = document.getElementById('shop-all-btn');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+            // Add click event listeners
+            if (shopNowBtn) {
+                shopNowBtn.addEventListener('click', redirectToThankYouPage);
+            }
+            if (shopAllBtn) {
+                shopAllBtn.addEventListener('click', redirectToThankYouPage);
+            }
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', redirectToThankYouPage);
+            });
+        });
+    </script>
 </body>
 </html>
