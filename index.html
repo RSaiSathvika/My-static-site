@@ -3,151 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Artistic Haven - Unleash Your Creativity</title>
+    <title>Illuminate Your World - The Aurora Lamp</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f4f8; /* A soft, calming background */
         }
         h1, h2 {
             font-family: 'Playfair Display', serif;
         }
-        .art-bg {
-            background-image: url('https://placehold.co/1920x1080/EFE3D5/4A4A4A?text=Watercolor+Paper+Texture');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+        .bg-light-blue {
+            background-color: #e0f2fe;
         }
-        .btn-primary {
-            background-color: #6b21a8; /* Dark Purple */
-            color: #fff;
-            padding: 1rem 2.5rem;
+        .btn-buy-now {
+            background-color: #0d9488; /* Teal color */
+            color: white;
+            padding: 1.25rem 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
             border-radius: 9999px;
-            font-weight: 600;
-            transition: transform 0.3s, background-color 0.3s;
-            box-shadow: 0 4px 15px rgba(107, 33, 168, 0.4);
-        }
-        .btn-primary:hover {
-            background-color: #581c87;
-            transform: translateY(-3px);
-        }
-        .card-product {
+            box-shadow: 0 10px 20px rgba(13, 148, 136, 0.4);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        .card-product:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        .btn-buy-now:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(13, 148, 136, 0.6);
         }
     </style>
 </head>
-<body class="art-bg">
+<body class="antialiased">
 
-    <header class="bg-white bg-opacity-90 shadow-lg p-6 sticky top-0 z-50 rounded-b-3xl mx-4 mt-4">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-5xl font-bold text-gray-800 italic tracking-wider">
-                The Artistic Haven
-            </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-700 hover:text-purple-600 font-semibold transition duration-300">Home</a>
-                <a href="#" class="text-gray-700 hover:text-purple-600 font-semibold transition duration-300">Products</a>
-                <a href="#" class="text-gray-700 hover:text-purple-600 font-semibold transition duration-300">Contact</a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="container mx-auto my-20 p-8 md:p-16 bg-white bg-opacity-95 rounded-3xl shadow-2xl text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-7xl md:text-9xl font-bold text-purple-900 mb-6 leading-tight animate-bounce">
-                Create.
-                <span class="text-pink-600">Inspire.</span>
-                <br>
-                Flourish.
-            </h1>
-            <p class="text-2xl md:text-3xl text-gray-700 mb-10 leading-relaxed font-light">
-                Your journey into art begins here. Find premium art supplies that transform ideas into masterpieces.
-            </p>
-            <button id="shop-now-btn" class="btn-primary text-xl font-bold uppercase tracking-wide">
-                Shop Our Collection
-            </button>
-        </div>
-    </section>
-
-    <section class="container mx-auto py-20 px-8">
-        <h2 class="text-6xl font-bold text-center text-purple-900 mb-16">Featured Products</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div class="bg-white p-8 rounded-3xl shadow-xl card-product">
-                <img src="https://placehold.co/400x300/F4E8D7/7A6B5B?text=Watercolor+Set" alt="Watercolor Set" class="w-full h-60 object-cover rounded-2xl mb-6 border-4 border-yellow-200">
-                <h3 class="text-3xl font-semibold text-gray-800 mb-3">Artist's Watercolor Set</h3>
-                <p class="text-gray-600 mb-5">24 vibrant, professional-grade pans for stunning washes and layers.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-4xl font-bold text-purple-700">₹ 1,500</span>
-                    <button class="btn-primary px-8 py-3 text-lg add-to-cart-btn">Add to Cart</button>
+    <div id="landing-page" class="min-h-screen flex items-center justify-center p-8">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl bg-white p-12 rounded-3xl shadow-2xl">
+            <div class="flex flex-col items-center">
+                <div class="w-full max-w-xl mb-8">
+                    <img src="https://placehold.co/800x600/60a5fa/ffffff?text=The+Aurora+Lamp" alt="Main product image of the Aurora Lamp" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white">
+                </div>
+                <div class="grid grid-cols-3 gap-4 w-full max-w-xl">
+                    <img src="https://placehold.co/200x150/93c5fd/ffffff?text=Lamp+View+1" alt="Lamp view 1" class="w-full h-auto rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200 border-2 border-transparent hover:border-blue-500">
+                    <img src="https://placehold.co/200x150/dbeafe/ffffff?text=Lamp+View+2" alt="Lamp view 2" class="w-full h-auto rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200 border-2 border-transparent hover:border-blue-500">
+                    <img src="https://placehold.co/200x150/bfdbfe/ffffff?text=Lamp+View+3" alt="Lamp view 3" class="w-full h-auto rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200 border-2 border-transparent hover:border-blue-500">
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-3xl shadow-xl card-product">
-                <img src="https://placehold.co/400x300/C8D6E5/3C4F62?text=Premium+Sketchbook" alt="Premium Sketchbook" class="w-full h-60 object-cover rounded-2xl mb-6 border-4 border-blue-200">
-                <h3 class="text-3xl font-semibold text-gray-800 mb-3">Premium Sketchbook (A4)</h3>
-                <p class="text-gray-600 mb-5">Thick, bleed-proof paper perfect for pencils, markers, and ink.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-4xl font-bold text-purple-700">₹ 650</span>
-                    <button class="btn-primary px-8 py-3 text-lg add-to-cart-btn">Add to Cart</button>
-                </div>
-            </div>
+            <div class="text-center lg:text-left">
+                <span class="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-4 block">New Launch</span>
+                <h1 class="text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                    The Aurora Lamp
+                </h1>
+                <p class="text-3xl text-gray-700 font-semibold mb-8">
+                    ₹ 2,999 <span class="text-xl text-gray-400 line-through ml-2">₹ 4,500</span>
+                </p>
+                <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Transform any room into a serene, ambient escape with our mesmerizing Aurora Lamp. Featuring 16 million colors and dynamic light modes, it creates a unique atmosphere for relaxation or entertainment.
+                </p>
+                
+                <ul class="text-left text-gray-700 space-y-4 mb-12 max-w-md mx-auto lg:mx-0">
+                    <li class="flex items-center text-xl"><span class="text-teal-500 mr-3">&#10003;</span> 16 Million Dynamic Colors</li>
+                    <li class="flex items-center text-xl"><span class="text-teal-500 mr-3">&#10003;</span> Remote & App Control</li>
+                    <li class="flex items-center text-xl"><span class="text-teal-500 mr-3">&#10003;</span> Sleep & Timer Modes</li>
+                    <li class="flex items-center text-xl"><span class="text-teal-500 mr-3">&#10003;</span> Energy-Efficient LED</li>
+                </ul>
 
-            <div class="bg-white p-8 rounded-3xl shadow-xl card-product">
-                <img src="https://placehold.co/400x300/FFD1DC/E57373?text=Acrylic+Paint+Tubes" alt="Acrylic Paint Set" class="w-full h-60 object-cover rounded-2xl mb-6 border-4 border-pink-200">
-                <h3 class="text-3xl font-semibold text-gray-800 mb-3">Vibrant Acrylic Paint Set</h3>
-                <p class="text-gray-600 mb-5">12 richly pigmented tubes for canvas, wood, and other surfaces.</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-4xl font-bold text-purple-700">₹ 1,100</span>
-                    <button class="btn-primary px-8 py-3 text-lg add-to-cart-btn">Add to Cart</button>
+                <div class="text-center lg:text-left">
+                    <a href="thankyou.html" class="btn-buy-now inline-block">
+                        Buy Now
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section class="container mx-auto py-20 text-center">
-        <h2 class="text-6xl font-bold text-gray-800 mb-8">Ready to create?</h2>
-        <p class="text-2xl text-gray-600 max-w-4xl mx-auto mb-12">
-            Explore our full catalog and find the perfect tools to bring your artistic visions to life.
-        </p>
-        <button id="shop-all-btn" class="btn-primary text-2xl">
-            View All Products
-        </button>
-    </section>
-
-    <footer class="bg-gray-900 text-white py-12 px-8 mt-20 rounded-t-3xl">
-        <div class="container mx-auto text-center">
-            <p class="text-gray-400">&copy; 2025 The Artistic Haven. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Function to handle redirection
-            function redirectToThankYouPage() {
-                window.location.href = 'thankyou.html';
-            }
-
-            // Get all buttons by their IDs and class
-            const shopNowBtn = document.getElementById('shop-now-btn');
-            const shopAllBtn = document.getElementById('shop-all-btn');
-            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
-
-            // Add click event listeners
-            if (shopNowBtn) {
-                shopNowBtn.addEventListener('click', redirectToThankYouPage);
-            }
-            if (shopAllBtn) {
-                shopAllBtn.addEventListener('click', redirectToThankYouPage);
-            }
-            addToCartButtons.forEach(button => {
-                button.addEventListener('click', redirectToThankYouPage);
-            });
-        });
-    </script>
+    </div>
 </body>
 </html>
